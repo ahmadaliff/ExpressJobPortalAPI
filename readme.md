@@ -248,7 +248,7 @@ _Response (404, not found)_
 _Request Header_
 
 ```
-not needed
+Bearer Token
 ```
 
 _Request Body_
@@ -279,7 +279,7 @@ _Response (404, not found)_
 _Request Header_
 
 ```
-not needed
+Bearer Token
 ```
 
 _Request Body_
@@ -365,7 +365,7 @@ _Response (404, not found)_
 _Request Header_
 
 ```
-not needed
+Bearer Token
 ```
 
 _Request Body_
@@ -401,7 +401,7 @@ _Response (200)_
 _Request Header_
 
 ```
-not needed
+Bearer Token
 ```
 
 _Request Body_
@@ -447,7 +447,7 @@ _Response (404, not found)_
 _Request Header_
 
 ```
-not needed
+Bearer Token
 ```
 
 _Request Body_
@@ -484,7 +484,7 @@ _Response (404, not found)_
 _Request Header_
 
 ```
-not needed
+Bearer Token
 ```
 
 _Request Body_
@@ -543,7 +543,7 @@ _Request Header_
 
 ```
 
-not needed
+Bearer Token
 
 ```
 
@@ -580,7 +580,7 @@ _Response (404)_
 _Request Header_
 
 ```
-not needed
+Bearer Token
 ```
 
 _Request Body_
@@ -624,7 +624,7 @@ _Request Header_
 
 ```
 
-not needed
+Bearer Token
 
 ```
 
@@ -684,7 +684,7 @@ _Request Header_
 
 ```
 
-not needed
+Bearer Token
 
 ```
 
@@ -745,7 +745,7 @@ _Request Header_
 
 ```
 
-not needed
+Bearer Token
 
 ```
 
@@ -794,7 +794,7 @@ _Request Header_
 
 ```
 
-not needed
+Bearer Token
 
 ```
 
