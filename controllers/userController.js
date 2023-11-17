@@ -53,9 +53,13 @@ exports.register = async (req, res) => {
   // #swagger.tags = ['GlobalRoute']
   try {
     const newUser = req.body;
+    const roleList = ["applicant", "hr"];
     const { error, handleRes } = validateJoi(res, newUser, schemaUser);
     if (error) {
-      handleRes;
+      return handleRes;
+    }
+    if (!roleList.includes(newUser.role)) {
+      return handleResponse(res, 400, "Invalid role");
     }
     const isExist = await User.findOne({ where: { email: newUser.email } });
     if (isExist) {
@@ -146,7 +150,7 @@ exports.editProfile = async (req, res) => {
       fieldtoEdit
     );
     if (error) {
-      handleRes;
+      return handleRes;
     }
     const isExist = await User.findOne({ where: { id: id } });
     if (!isExist) {
