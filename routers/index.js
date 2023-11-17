@@ -8,6 +8,7 @@ const {
   VerifyEmail,
   forgotPassword,
   sendResetPassword,
+  getProfile,
 } = require("../controllers/userController");
 const {
   authenticationMiddleware,
@@ -30,6 +31,7 @@ router.get(
 // must login
 router.use(authenticationMiddleware);
 
+router.get("/get-profile", getProfile);
 router.patch("/verify-email", VerifyEmail);
 router.put("/edit-profile", editProfile);
 

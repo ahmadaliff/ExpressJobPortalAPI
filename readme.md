@@ -9,6 +9,7 @@ Basic express.js project with basic routes:
 - sequelize
 - nodemailer
 - dotEnv
+- Swagger
 
 ---
 
@@ -200,7 +201,7 @@ _Response (404, not found)_
 
 ---
 
-### POST /api/send-reset-password/:token
+### GET /api/send-reset-password/:token
 
 > send reset password
 
@@ -268,6 +269,51 @@ _Response (404, not found)_
  {message:"Data Not Found"}
 
 ```
+
+---
+
+### GET /api/get-profile
+
+> get profile
+
+_Request Header_
+
+```
+not needed
+```
+
+_Request Body_
+
+```
+not needed
+```
+
+_Response (200)_
+
+```
+{
+    "data": {
+        "id": 2,
+        "fullName": "abang HR",
+        "email": "hr123@user.com",
+        "role": "hr",
+        "password": "$2b$10$rEqIEgzRz2D9yZ697IkdTO0UBfExxHGt1nskAK8chjJoWNabCnG0O",
+        "isEmailAuth": false,
+        "createdAt": "2023-11-17T09:09:51.000Z",
+        "updatedAt": "2023-11-17T09:09:51.000Z"
+    },
+    "message": "success"
+}
+```
+
+_Response (404, not found)_
+
+```
+ {message:"Data Not Found"}
+
+```
+
+---
 
 ---
 
